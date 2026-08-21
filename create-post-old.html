@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Write a Story - Story Bloom</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            🌱 Story Bloom
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-post.html">Write</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="signup-btn">Sign Up</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Create Post Section -->
+    <section class="create-post">
+
+        <h1>Write Your Story</h1>
+
+        <p>Share your thoughts, experiences and ideas with the world.</p>
+
+        <form action="create-post.php" method="POST">
+
+    <label for="title">Story Title</label>
+
+    <input
+        type="text"
+        id="title"
+        name="title"
+        placeholder="Enter your story title"
+        required
+    >
+
+    <label for="content">Your Story</label>
+
+    <textarea
+        id="content"
+        name="content"
+        rows="12"
+        placeholder="Write your story here..."
+        required
+    ></textarea>
+
+    <button type="submit">
+        Publish Story
+    </button>
+
+</form>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Story Bloom. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    
+
+</body>
+
+</html>

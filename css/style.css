@@ -1,0 +1,429 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2e7d32;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar nav a:hover {
+    text-decoration: underline;
+}
+
+.signup-btn {
+    background-color: white;
+    color: #2e7d32 !important;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e8f5e9;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    color: #2e7d32;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: #1b5e20;
+}
+
+.secondary-btn {
+    background-color: white;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+}
+
+.secondary-btn:hover {
+    background-color: #2e7d32;
+    color: white;
+}
+
+/* Stories Section */
+.stories {
+    padding: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.stories h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* Blog Cards */
+.blog-card {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+.blog-content h3 {
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Blog Information */
+.blog-info {
+    display: flex;
+    gap: 20px;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Read More */
+.read-more {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: white;
+}
+
+/* Create Post Page */
+.create-post {
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.create-post h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.create-post > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.create-post form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.create-post input,
+.create-post textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+.create-post input:focus,
+.create-post textarea:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.create-post textarea {
+    resize: vertical;
+}
+
+.create-post button {
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #1b5e20;
+}
+
+/* Full Story Page */
+
+.post-page {
+    max-width: 900px;
+    min-height: 70vh;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.post-page h1 {
+    color: #2e7d32;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#post-author {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+#post-date {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+#post-content {
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+/* Register Page */
+
+.register-page {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.register-page h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.register-page > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.register-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-page label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.register-page input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.register-page input:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.register-page button {
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.register-page button:hover {
+    background-color: #1b5e20;
+}
+
+.login-link {
+    margin-top: 25px;
+}
+
+.login-link a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Login Page */
+
+.login-page {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #ddd;
+}
+
+.login-page h1 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.login-page > p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.login-page form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-page label {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.login-page input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.login-page input:focus {
+    outline: none;
+    border-color: #2e7d32;
+}
+
+.login-page button {
+    margin-top: 25px;
+    padding: 13px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-page button:hover {
+    background-color: #1b5e20;
+}
+
+.register-link {
+    margin-top: 25px;
+}
+
+.register-link a {
+    color: #2e7d32;
+    font-weight: bold;
+    text-decoration: none;
+}

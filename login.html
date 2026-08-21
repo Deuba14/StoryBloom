@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - Story Bloom</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            🌱 Story Bloom
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="create-post.html">Write</a>
+            <a href="login.html">Login</a>
+            <a href="register.html" class="signup-btn">Sign Up</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Login Section -->
+    <section class="login-page">
+
+        <h1>Welcome Back</h1>
+
+        <p>Login to continue sharing your stories.</p>
+
+       <form id="loginForm" action="login.php" method="POST">
+
+    <label for="loginEmail">Email</label>
+
+    <input
+        type="email"
+        id="loginEmail"
+        name="email"
+        placeholder="Enter your email"
+        required
+    >
+
+    <label for="loginPassword">Password</label>
+
+    <input
+        type="password"
+        id="loginPassword"
+        name="password"
+        placeholder="Enter your password"
+        required
+    >
+
+    <button type="submit">
+        Login
+    </button>
+
+</form>
+
+        <p class="register-link">
+            Don't have an account?
+            <a href="register.html">Sign Up</a>
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 Story Bloom. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
